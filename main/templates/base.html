@@ -1,0 +1,47 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+      integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
+      crossorigin="anonymous"
+    />
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <ul class="nav_ul">
+            <li><a href="#">МЕНЮ ЦА</a><i class="fas fa-caret-down icon1"></i></li>
+            <li><a href="#">РАСЧЕТНЫЕ ВЕДОМОСТИ</a><i class="fas fa-caret-down icon1"></i></li>
+            <li><a href="#">ВЫПЛАТЫ</a><i class="fas fa-caret-down icon1"></i></li>
+            <li><a href="#">ОТЧЕТЫ</a><i class="fas fa-caret-down icon1"></i></li>
+            <li><a href="#">ОБНОВИТЬ ПИН</a></li>
+            <li><a href="#">СПРАВОЧНИКИ</a></li>
+            <li><a href="#">САЛЬДО</a></li>
+            <li><a href="#">КАРТОЧКА СТРАХОВОГО СЧЕТА</a></li>
+        </ul>
+        <ul class="main_left">
+            <li><a href="#">Плательщики</a></li>
+            <li><a href="#">Районы</a></li>
+            <li><a href="{% url 'main' %}">Счета</a></li>
+            <li><a href="#">СМЗ</a></li>
+            <li><a href="{% url 'bank' %}">Банки</a></li>
+            <li><a href="#">Рынки</a></li>
+            <li><a href="#">РОКи</a></li>
+            <li><a href="#">Счета РОКов</a></li>
+            <li><a href="{% url 'internalCode' %}">Внутренние коды бюджетной классификации</a></li>
+        </ul>
+        <div class="main_center">
+            {% block content %}
+
+            {% endblock %}
+        </div>
+    </div>
+</body>
+</html>

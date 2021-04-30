@@ -186,9 +186,11 @@ a {
 #add_modal .modal_container form table {
     width: 100%;
     text-align: center;
+    border: 0 !important;
 }
 #add_modal .modal_container form table tr td {
     padding: 7px 0;
+    border: 0 !important;
 }
 #add_modal .modal_container form input {
     width: 90%;
