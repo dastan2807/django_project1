@@ -1,0 +1,4 @@
+blog/production_settings.py
+.idea
+venv
+db.sqlite3
